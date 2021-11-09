@@ -1,21 +1,24 @@
 .main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+    display: flex; 
 }
 
 .fixed {
-    height: 100%;
+    height: 100vh;
     width:425px;
     background-color: #f9f6f8;
     border:1px tomato solid;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    
 }
 
 .right{
     height: 100rem;
-    width: 70%;
+    width: calc(100% - 425px);
     background-color: #c5e4fb;
     border:1px solid;
+    margin-left: 425px;
 }
 
 .right_main{
